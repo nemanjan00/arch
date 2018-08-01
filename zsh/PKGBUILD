@@ -1,0 +1,18 @@
+buildarch=128
+
+pkgname=zsh-init
+pkgver=0.0.0
+pkgrel=1
+pkgdesc="Zsh init"
+arch=('x86_64')
+depends=("zsh" "zplug")
+
+package() {
+install -dm755 "${pkgdir}/etc/zsh"
+
+cat > "$pkgdir/etc/zsh/zshrc" <<EOF
+source /home/nemanjan00/.zshrc
+EOF
+}
+
+# vim:se ts=2 sw=2 et:

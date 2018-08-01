@@ -1,0 +1,6 @@
+# Packages
+
+pkg
+src
+*.pkg.tar.xz
+
